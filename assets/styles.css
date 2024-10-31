@@ -1,20 +1,20 @@
 @font-face {
   font-family: 'TTLakes';
-  src: url('fonts/TTLakes-Regular.woff') format('woff');
+  src: url('../fonts/TTLakes-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'TTLakes';
-  src: url('fonts/TTLakes-Bold.woff') format('woff');
+  src: url('../fonts/TTLakes-Bold.ttf') format('woff');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'TTLakes';
-  src: url('fonts/TTLakes-Italic.woff') format('woff');
+  src: url('../fonts/TTLakes-Italic.woff') format('woff');
   font-weight: normal;
   font-style: italic;
 }
