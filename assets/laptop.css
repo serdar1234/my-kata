@@ -8,17 +8,15 @@
 }
 
 .nav__right {
-  width:auto;
+  width: auto;
 }
 
 .nav__list {
-  display: flex;
-  list-style-type: none;
   height: auto;
   padding: 0 8px;
 }
 
-.nav__right .nav__list{
+.nav__right .nav__list {
   justify-content: flex-end;
   padding-left: 24px;
 }
@@ -28,24 +26,8 @@
 }
 
 .nav__link {
-  padding: 0;
   display: flex;
   text-decoration: none;
-}
-
-.nav__icon {
-  width: 40px;
-  height: auto;
-}
-
-.nav__logo {
-  width: 97px;
-  height: auto;
-}
-
-.nav__divider-img {
-  width: 2px;
-  height: auto;
 }
 
 .nav__text {
@@ -68,21 +50,12 @@
 /* Heading */
 .heading {
   margin-top: 42px;
-  height: 40px;
 }
 
 .heading__border {
   padding-right: 30px;
-  width: 4px;
-  float: left;
 }
 
-.heading__h1 {
-  font-size: 28px;
-  font-weight: bold;
-  line-height: 40px;
-  letter-spacing: -0.6px;
-}
 /* Scroll Menu */
 .scrollmenu {
   margin-top: 8px;
@@ -90,24 +63,11 @@
 }
 
 .scrollmenu__item {
-  color: #7E7E82;
-  display: inline-block;
-  font-size: 16px;
-  text-align: center;
-  padding: 7px 15px;
-  margin-right: 2px;
   margin-bottom: 8px;
-  text-decoration: none;
 }
 
 .scrollmenu__item:last-child {
   margin-bottom: 0;
-}
-
-.scrollmenu__item.active {
-  background-color: white;
-  border: 2px solid #B8FFEC;
-  border-radius: 5px;
 }
 
 /* First block */
@@ -115,40 +75,18 @@
   display: flex;
   justify-content: center;
   padding: 0 24px;
-  /* -webkit-padding-before: 16px; */
 }
 
 .first-block__text {
-  font-size: 14px;
-  line-height: 20px;
-  letter-spacing: 0.2px;
   display: flex;
   flex-direction: column;
   margin: 14px 20px 16px 10px;
-  /* -webkit-margin-before: 8px; */
 }
 
 .first-block__button {
-  background-color: #F8F8F8;
-  border: none;
-  display: flex;
-  width: 132px;
-  height: 24px;
-  justify-content: space-evenly;
-  align-items:flex-end;
   margin: 14px 4px;
 }
 
-.first-block__arrow-icon {
-  padding-right: 14px;
-}
-
-.first-block__read-more {
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: -0.2px;
-  color: #1B1C21;
-}
 .first-block__text1 {
   display: block;
   margin-bottom: 20px;
@@ -161,7 +99,4 @@
 
 .first-block__image {
   border-radius: 6px;
-  width: 100%;
-  aspect-ratio: 16/9;
-  object-fit: cover;
 }
