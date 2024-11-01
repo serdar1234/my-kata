@@ -31,7 +31,7 @@ body {
   width: 50%;
 }
 
-.nav__item.nav__item--divide {
+.nav__item.nav__item--small {
   text-align: center;
   width: 10px;
 }

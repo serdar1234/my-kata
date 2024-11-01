@@ -50,6 +50,10 @@
   display: none;
 }
 
+.nav__text {
+  display: none;
+}
+
 /* Heading */
 .heading {
   margin-top: 25px;
