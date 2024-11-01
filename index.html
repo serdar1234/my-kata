@@ -5,32 +5,53 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/styles.css">
-  <link rel="stylesheet" media="screen and (max-width:320.98px)" href="assets/mobile.css">
+  <!-- <link rel="stylesheet" media="screen and (max-width:320.98px)" href="assets/mobile.css">
   <link rel="stylesheet" media="screen and (min-width:321px) and (max-width:768.98px)" href="assets/tablet.css">
-  <link rel="stylesheet" media="screen and (min-width:769px)" href="assets/laptop.css">
+  <link rel="stylesheet" media="screen and (min-width:769px)" href="assets/laptop.css"> -->
+
+  <link rel="stylesheet" media="screen and (max-width:767.98px)" href="assets/mobile.css">
+  <link rel="stylesheet" media="screen and (min-width:768px) and (max-width:991.98px)" href="assets/tablet.css">
+  <link rel="stylesheet" media="screen and (min-width:992px)" href="assets/laptop.css">
 
   <title>Услуги и сервисы</title>
 </head>
 
 <body>
   <nav class="nav">
-    <ul class="nav__list">
-      <li class="nav__item">
-        <a class="nav__link" href="#"><img class="nav__icon" src="img/burger.svg" alt="logo"></a>
-      </li>
-      <li class="nav__item">
-        <a class="nav__link" href="#"><img class="nav__logo" src="img/Group.svg" alt="logo"></a>
-      </li>
-      <li>
-        <img class="nav__divider" src="img/divider.svg" alt="">
-      </li>
-      <li class="nav__item">
-        <a class="nav__link" href="#"><img class="nav__icon" src="img/repair.svg" alt="logo"></a>
-      </li>
-      <li class="nav__item">
-        <a class="nav__link" href="#"><img class="nav__icon" src="img/checkstatus.svg" alt="logo"></a>
-      </li>
-    </ul>
+    <div class="nav__left">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link" href="#"><img class="nav__icon" src="img/burger.svg" alt="меню"></a>
+        </li>
+        <li class="nav__item nav__item--divide">
+          <img class="nav__divider-img" src="img/divider.svg" alt="">
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#"><img class="nav__logo" src="img/logo.svg" alt="лого"></a>
+        </li>
+    </div>
+    <div class="nav__right">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link" href="#"><img class="nav__icon" src="img/call.svg" alt="звонок"></a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#"><img class="nav__icon" src="img/chat.svg" alt="чат"></a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#"><img class="nav__icon" src="img/profile.svg" alt="профиль"></a>
+        </li>
+        <li class="nav__item nav__item--divide">
+          <img class="nav__divider-img" src="img/divider.svg" alt="">
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#"><img class="nav__icon" src="img/repair.svg" alt="Оставить заявку"></a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#"><img class="nav__icon" src="img/checkstatus.svg" alt="Статус ремонта"></a>
+        </li>
+      </ul>
+    </div>
   </nav>
   <header>
     <div class="heading">
@@ -58,9 +79,9 @@
             </span>
             <p class="first-block__read-more">Читать далее</p>
         </button>
-        <p class="first-block__text2">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
+        <p class="first-block__text2">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера <span class="first-block__text3">, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</span></p>
       </div>
-      <figure>
+      <figure class="first-block__figure">
         <img class="first-block__image" src="img/office.png" alt="Офис CPS">
       </figure>
     </article>

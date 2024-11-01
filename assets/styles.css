@@ -5,6 +5,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'TTLakes';
+  src: url('../fonts/TTLakes-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -13,4 +20,18 @@
 
 body {
   background-color: #F8F8F8;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__left, .nav__right {
+  width: 50%;
+}
+
+.nav__item.nav__item--divide {
+  text-align: center;
+  width: 10px;
 }

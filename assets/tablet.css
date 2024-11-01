@@ -1,3 +1,157 @@
-body {
-    background-color: #F8F8F8;
-  }
+/* Navigation */
+
+.nav__list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style-type: none;
+  height: 88px;
+  box-shadow: 0px 2px 0px #D9FFF5;
+  background-color: white;
+  padding: 0 8px;
+}
+
+.nav__left .nav__list{
+  justify-content: flex-start;
+  padding-left: 24px;
+}
+
+.nav__item {
+  padding-top: 5px;
+  margin-right: 16px;
+}
+
+.nav__link {
+  padding: 0;
+}
+
+.nav__icon {
+  width: 40px;
+  height: auto;
+}
+
+.nav__logo {
+  width: 97px;
+  height: auto;
+}
+
+.nav__divider-img {
+  width: 2px;
+  height: auto;
+}
+
+/* Heading */
+.heading {
+  margin-top: 25px;
+  height: 40px;
+}
+
+.heading__border {
+  padding-right: 20px;
+  width: 4px;
+  float: left;
+}
+
+.heading__h1 {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 40px;
+  letter-spacing: -0.6px;
+}
+/* Scroll Menu */
+.scrollmenu {
+  overflow: auto;
+  white-space: nowrap;
+  margin-top: 32px;
+  margin-left: 24px;
+  scrollbar-width: none;  /* Firefox fix*/
+}
+
+.scrollmenu::-webkit-scrollbar {
+  width: 0px;  /* Chrome fix */
+}
+
+.scrollmenu__item {
+  color: #7E7E82;
+  display: inline-block;
+  font-size: 16px;
+  text-align: center;
+  padding: 7px 15px;
+  margin-right: 2px;
+  text-decoration: none;
+}
+
+.scrollmenu__item.active {
+  background-color: white;
+  border: 2px solid #B8FFEC;
+  border-radius: 5px;
+}
+
+/* First block */
+.first-block {
+  display: flex;
+  justify-content: center;
+  padding: 24px;
+  -webkit-padding-before: 8px;
+}
+
+.first-block__text {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  display: flex;
+  flex-direction: column;
+  margin: 8px 48px;
+  margin-left: 0;
+  margin-bottom: 16px;
+  /* -webkit-margin-before: 8px; */
+}
+
+.first-block__button {
+  background-color: #F8F8F8;
+  border: none;
+  display: flex;
+  width: 132px;
+  height: 24px;
+  justify-content: space-evenly;
+  align-items:flex-end;
+  margin: 8px 4px;
+  order: 2;
+}
+
+.first-block__arrow-icon {
+  padding-right: 14px;
+}
+
+.first-block__read-more {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #1B1C21;
+}
+.first-block__text1 {
+  display: block;
+  order: 0;
+  margin-bottom: 20px;
+}
+
+.first-block__text2 {
+  display: block;
+  order: 1;
+}
+
+.first-block__text3 {
+  display: none;
+}
+
+.first-block__figure {
+  padding-top: 7px;
+  min-width: 50%;
+}
+
+.first-block__image {
+  border-radius: 6px;
+  width: 100%;
+  aspect-ratio: 5/3;
+  object-fit: cover;
+}
