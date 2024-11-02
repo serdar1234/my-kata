@@ -33,8 +33,8 @@ body {
 }
 
 .nav__item.nav__item--small {
-  text-align: center;
   width: 10px;
+  height: 32px;
 }
 
 .nav__list {
@@ -48,12 +48,13 @@ body {
 
 .nav__icon {
   width: 40px;
-  height: auto;
+  height: 40px;
 }
 
 .nav__divider-img {
-  width: 2px;
-  height: auto;
+  background: url("../img/divider.svg") center no-repeat;
+  width: 10px;
+  height: 32px;
 }
 
 .nav__logo {
