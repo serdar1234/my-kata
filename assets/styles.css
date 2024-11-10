@@ -109,16 +109,24 @@ main {
   height: 40px;
 }
 
-.heading__border {
-  width: 4px;
-  float: left;
-}
-
 .heading__h1 {
   font-size: 28px;
   font-weight: bold;
   line-height: 40px;
   letter-spacing: -0.6px;
+}
+
+.heading__h1::before {
+  display: inline-block;
+  content: "";
+  height: 40px;
+  width: 4px;
+  background-color: #41F6D7;
+  position: absolute;
+  left: 0;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  transform: rotate(180deg);
 }
 
 /* Scroll Menu */

@@ -38,12 +38,8 @@
   margin-top: 25px;
 }
 
-.heading__border {
-  padding-right: 12px;
-}
-
 .heading__h1 {
-  font-weight: normal;
+  margin-left: 12px;
 }
 
 /* Scroll Menu */
