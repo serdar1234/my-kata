@@ -1,9 +1,16 @@
-.nav__sidebar {
-  position: absolute;
-  display: block;
-  width: 320px;
+.nav {
   height: 100%;
-  background: salmon;
+  position: fixed;
+  inset: 0 0;
+}
+
+.nav__sidebar {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 320px;
+  background: #fff;
   z-index: 2;
   box-shadow: 10px 0 40px #bbb;
 }
@@ -13,11 +20,12 @@
   align-items: center;
   height: 88px;
   padding: 0 24px;
-  background-color: white;
+  background-color: #fff;
 }
 
 .nav__item.nav__item--moved-right {
-  margin-left: 63px;
+  margin-left: auto;
+  padding-right: 0;
 }
 
 .nav__item {
@@ -26,18 +34,58 @@
 }
 
 .sidebar__links ul {
-  padding: 16px 4px;
+  padding: 16px 0px;
 }
 
 .sidebar__links a {
   display: inline-block;
-  padding: 16px 20px;
+  padding: 16px 24px;
   text-decoration: none;
 }
 
-.sidebar__phone-num {
-  color: red;
+.sidebar__contacts {
+  margin-top: auto;
+  margin-bottom: 12px;
+}
+
+.nav__list.sidebar__list {
+  height: auto;
+}
+
+.sidebar__links.sidebar__links--mailto a {
+  padding: 10px 24px;
+}
+
+.sidebar__phone-num a {
+  color: #1B1C21;
   font-size: 24px;
+  font-weight: bold;
   line-height: 32px;
   letter-spacing: -0.6px;
+  text-decoration: none;
+  padding: 8px 24px;
+}
+
+.sidebar__button {
+  padding: 28px 20px;
+}
+
+.sidebar__button li {
+  display: inline-block;
+}
+
+.sidebar__button button{
+  border: none;
+  color: #1B1C21;
+  background-color: #fff;
+  padding: 3px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button[disabled] {
+  color: grey;
+  cursor: default;
 }
