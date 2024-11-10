@@ -27,6 +27,15 @@
   box-shadow: none;
 }
 
+.nav__icon:hover {
+  filter: invert(1);
+  transform: scale(1.1);
+}
+
+.nav__icon {
+  transition: all 300ms ease-out;
+}
+
 .sidebar .nav__item.nav__item--moved-right {
   margin-left: auto;
   padding-right: 0;
@@ -42,23 +51,23 @@
   padding: 16px 0px;
 }
 
+.sidebar__links a:hover {
+  transform: translateX(8px) scale(1.1);
+}
+
 .sidebar__links a {
   display: inline-block;
   padding: 16px 24px;
   text-decoration: none;
-}
-
-.sidebar__links a:hover {
-  transform: translateX(12px);
-  transition-duration: 200ms;
+  transition-duration: 300ms;
   transition-property: transform;
+  transition-timing-function: ease-in-out;
 }
 
 .sidebar__links--active a {
- /* #41F6D7; */
   color: #7E7E82;
-  margin-left: 4px;
-  padding-left: 20px;
+  position: relative;
+  padding-left: 24px;
 }
 
 .sidebar__links--active a::before {
@@ -74,8 +83,6 @@
    transform: rotate(180deg) translateY(4px);
  }
 
-
-
 .sidebar__contacts {
   margin-top: auto;
   margin-bottom: 12px;
@@ -90,15 +97,22 @@
   padding: 10px 24px;
 }
 
+.sidebar__phone-num a:hover {
+  transform: translateX(12px) scale(1.2);
+}
+
 .sidebar__phone-num a {
   color: #1B1C21;
+  display: inline-block;
   font-size: 24px;
   font-weight: bold;
   line-height: 32px;
   letter-spacing: -0.6px;
   text-decoration: none;
   padding: 8px 24px;
+  transition: transform 300ms ease-in-out;
 }
+
 
 .sidebar__button {
   padding: 28px 20px;
@@ -106,6 +120,11 @@
 
 .sidebar__button li {
   display: inline-block;
+  transition: transform 300ms ease;
+}
+
+.sidebar__button li:hover {
+  transform: scale(1.3);
 }
 
 .sidebar__button button{
