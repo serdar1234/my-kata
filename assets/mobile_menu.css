@@ -1,7 +1,15 @@
-.nav {
+.nav, aside {
+  display: block;
   height: 100%;
-  position: fixed;
+  position: absolute;
   inset: 0 0;
+  overflow-y: auto;
+  scrollbar-width: none;  /* Firefox fix */
+}
+
+/* Scrollbar chrome fix */
+aside::-webkit-scrollbar {
+  width: 0px;
 }
 
 .nav__sidebar {
@@ -21,6 +29,7 @@
   height: 88px;
   padding: 0 24px;
   background-color: #fff;
+  box-shadow: none;
 }
 
 .nav__item.nav__item--moved-right {
