@@ -1,14 +1,15 @@
 /* Navigation */
 .nav {
   width: 45%;
-  float: right;
-  display: flex;
   justify-content: flex-end;
   align-items: center;
 }
 
 .nav__right {
   width: auto;
+  position: absolute;
+  right: 0px;
+  top: 42px;
 }
 
 .nav__list {
@@ -23,11 +24,6 @@
 
 .nav__item {
   margin-right: 24px;
-}
-
-.nav__link {
-  display: flex;
-  text-decoration: none;
 }
 
 .nav__text {

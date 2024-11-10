@@ -25,12 +25,14 @@ html, body {
 
 header,
 main {
+  position: relative;
   max-width: 1120px;
   margin: 0 auto;
 }
 
 /* Navigation */
 .nav {
+  height: 100%;
   display: flex;
   justify-content: space-between;
 }
@@ -48,6 +50,8 @@ main {
 
 .nav__link {
   padding: 0;
+  text-decoration: none;
+  display: flex;
 }
 
 .nav__icon {

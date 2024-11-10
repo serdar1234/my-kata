@@ -1,19 +1,7 @@
-.nav, aside {
-  display: block;
+.sidebar {
   height: 100%;
-  position: absolute;
   inset: 0 0;
-  overflow-y: auto;
-  scrollbar-width: none;  /* Firefox fix */
-}
-
-/* Scrollbar chrome fix */
-aside::-webkit-scrollbar {
-  width: 0px;
-}
-
-.nav__sidebar {
-  position: relative;
+  position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -21,9 +9,16 @@ aside::-webkit-scrollbar {
   background: #fff;
   z-index: 2;
   box-shadow: 10px 0 40px #bbb;
+  overflow-y: auto;
+  scrollbar-width: none;  /* Firefox fix */
 }
 
-.nav__list {
+/* Scrollbar chrome fix */
+.sidebar::-webkit-scrollbar {
+  width: 0px;
+}
+
+.sidebar .nav__list {
   justify-content: flex-start;
   align-items: center;
   height: 88px;
@@ -32,12 +27,12 @@ aside::-webkit-scrollbar {
   box-shadow: none;
 }
 
-.nav__item.nav__item--moved-right {
+.sidebar .nav__item.nav__item--moved-right {
   margin-left: auto;
   padding-right: 0;
 }
 
-.nav__item {
+.sidebar .nav__item {
   padding-top: 2px;
   padding-right: 16px;
 }
@@ -57,7 +52,7 @@ aside::-webkit-scrollbar {
   margin-bottom: 12px;
 }
 
-.nav__list.sidebar__list {
+.sidebar .nav__list.sidebar__list {
   height: auto;
 }
 
@@ -94,7 +89,7 @@ aside::-webkit-scrollbar {
   cursor: pointer;
 }
 
-button[disabled] {
+.sidebar__button button[disabled] {
   color: grey;
   cursor: default;
 }
