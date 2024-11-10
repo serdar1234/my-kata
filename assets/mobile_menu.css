@@ -1,0 +1,43 @@
+.nav__sidebar {
+  position: absolute;
+  display: block;
+  width: 320px;
+  height: 100%;
+  background: salmon;
+  z-index: 2;
+  box-shadow: 10px 0 40px #bbb;
+}
+
+.nav__list {
+  justify-content: flex-start;
+  align-items: center;
+  height: 88px;
+  padding: 0 24px;
+  background-color: white;
+}
+
+.nav__item.nav__item--moved-right {
+  margin-left: 63px;
+}
+
+.nav__item {
+  padding-top: 2px;
+  padding-right: 16px;
+}
+
+.sidebar__links ul {
+  padding: 16px 4px;
+}
+
+.sidebar__links a {
+  display: inline-block;
+  padding: 16px 20px;
+  text-decoration: none;
+}
+
+.sidebar__phone-num {
+  color: red;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.6px;
+}

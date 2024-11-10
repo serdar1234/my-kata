@@ -39,11 +39,6 @@ main {
   width: 50%;
 }
 
-.nav__item.nav__item--small {
-  width: 10px;
-  height: 40px;
-}
-
 .nav__list {
   display: flex;
   align-items: center;
@@ -69,6 +64,39 @@ main {
 .nav__logo {
   width: 97px;
   height: auto;
+}
+
+/* Icons */
+.nav__icon.nav__icon--burger {
+  background-image: url('../img/burger.svg');
+}
+
+.nav__icon.nav__icon--call {
+  background-image: url('../img/call.svg');
+}
+
+.nav__icon.nav__icon--chat {
+  background-image: url('../img/chat.svg');
+}
+
+.nav__icon.nav__icon--checkstatus {
+  background-image: url('../img/checkstatus.svg');
+}
+
+.nav__icon.nav__icon--profile {
+  background-image: url('../img/profile.svg');
+}
+
+.nav__icon.nav__icon--repair {
+  background-image: url('../img/repair.svg');
+}
+
+.nav__icon.nav__icon--search {
+  background-image: url('../img/search.svg');
+}
+
+.nav__icon.nav__icon--x-burger {
+  background-image: url('../img/x-burger.svg');
 }
 
 /* Heading */
@@ -131,7 +159,7 @@ main {
   padding-right: 14px;
 }
 
-.first-block__read-more {
+.first-block__read-more, .sidebar__links a {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.2px;
