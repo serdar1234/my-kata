@@ -6,9 +6,9 @@
   flex-direction: column;
   justify-content: flex-start;
   width: 320px;
-  background: #fff;
+  background: #FFF;
   z-index: 2;
-  box-shadow: 10px 0 40px #bbb;
+  box-shadow: 10px 0 40px #BBB;
   overflow-y: auto;
   scrollbar-width: none;  /* Firefox fix */
 }
@@ -23,7 +23,7 @@
   align-items: center;
   height: 88px;
   padding: 0 24px;
-  background-color: #fff;
+  background-color: #FFF;
   box-shadow: none;
 }
 
@@ -130,7 +130,7 @@
 .sidebar__button button{
   border: none;
   color: #1B1C21;
-  background-color: #fff;
+  background-color: #FFF;
   padding: 3px;
   text-align: center;
   text-decoration: none;

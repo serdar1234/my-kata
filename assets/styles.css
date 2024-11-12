@@ -155,22 +155,19 @@ main {
   border-radius: 5px;
 }
 
-.scrollmenu::after, .scrollmenu::before {
-  display: block;
-  content: "";
-  position: absolute;
+.scrollmenu__item--fade, .scrollmenu__item--fade-right {
+  display: inline-block;
+  position: fixed;
+  top: 177px;
   right: 0;
-  top: 0;
   width: 24px;
-  height: 100%;
-  background: linear-gradient(to right, transparent, #F8F8F8);
+  height: 40px;
+  background: linear-gradient(to right, transparent, #F8F8F8) repeat-y;
 }
 
-.scrollmenu::before {
-  right: auto;
+.scrollmenu__item--fade {
   left: 0;
-  background: linear-gradient(to left, transparent, #F8F8F8);
-  background-repeat: repeat-y;
+  background: linear-gradient(to left, transparent, #F8F8F8) repeat-y;
 }
 
 /* First block */

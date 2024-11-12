@@ -41,6 +41,10 @@
   scrollbar-width: none;  /* Firefox fix*/
 }
 
+.scrollmenu__item--fade, .scrollmenu__item--fade-right {
+  top: 185px
+}
+
 /* First block */
 .first-block {
   display: flex;

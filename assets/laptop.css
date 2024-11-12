@@ -58,16 +58,16 @@
   padding-left: 32px;
 }
 
+.scrollmenu__item--fade, .scrollmenu__item--fade-right {
+  display: none;
+}
+
 .scrollmenu__item {
   margin-bottom: 8px;
 }
 
 .scrollmenu__item:last-child {
   margin-bottom: 0;
-}
-
-.scrollmenu::after, .scrollmenu::before {
-  display: none;
 }
 
 /* First block */
