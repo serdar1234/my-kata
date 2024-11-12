@@ -12,7 +12,7 @@
   align-items: center;
   height: 88px;
   box-shadow: 0px 2px 0px #D9FFF5;
-  background-color: white;
+  background-color: #FFF;
 }
 
 .nav__item {
@@ -47,7 +47,7 @@
   overflow: auto;
   white-space: nowrap;
   margin-top: 24px;
-  margin-left: 16px;
+  padding-left: 16px;
   scrollbar-width: none;
   /* Firefox fix*/
 }

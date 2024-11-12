@@ -130,6 +130,10 @@ main {
 }
 
 /* Scroll Menu */
+.scrollmenu {
+  position: relative;
+}
+
 .scrollmenu::-webkit-scrollbar {
   width: 0px;
   /* Chrome fix */
@@ -146,9 +150,27 @@ main {
 }
 
 .scrollmenu__item.active {
-  background-color: white;
+  background-color: #FFF;
   border: 2px solid #B8FFEC;
   border-radius: 5px;
+}
+
+.scrollmenu::after, .scrollmenu::before {
+  display: block;
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 24px;
+  height: 100%;
+  background: linear-gradient(to right, transparent, #F8F8F8);
+}
+
+.scrollmenu::before {
+  right: auto;
+  left: 0;
+  background: linear-gradient(to left, transparent, #F8F8F8);
+  background-repeat: repeat-y;
 }
 
 /* First block */
