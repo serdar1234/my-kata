@@ -89,7 +89,15 @@
         </button>
       </div>
       <figure class="first-block__figure">
-        <img class="first-block__image" src="img/office.png" alt="Офис CPS">
+        <picture>
+          <source srcset="img/office_mobile.webp" type="image/webp" media="(max-width:767.98px)">
+          <source srcset="img/office_mobile.png" type="image/png" media="(max-width:767.98px)">
+          <source srcset="img/office_tablet.webp" type="image/webp" media="(min-width:768px) and (max-width:991.98px)">
+          <source srcset="img/office_tablet.png" type="image/png" media="(min-width:768px) and (max-width:991.98px)">
+          <source srcset="img/office.webp" type="image/webp" media="(min-width:992px)">
+          <source srcset="img/office.png" type="image/png" media="(min-width:992px)">
+          <img class="first-block__image" src="img/office.png" alt="Офис CPS">
+        </picture>
       </figure>
     </article>
   </main>
