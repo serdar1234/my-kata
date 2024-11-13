@@ -58,7 +58,7 @@
   padding-left: 32px;
 }
 
-.scrollmenu__item--fade, .scrollmenu__item--fade-right {
+.scrollmenu::before, .scrollmenu::after {
   display: none;
 }
 

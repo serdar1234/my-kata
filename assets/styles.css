@@ -155,9 +155,10 @@ main {
   border-radius: 5px;
 }
 
-.scrollmenu__item--fade, .scrollmenu__item--fade-right {
+.scrollmenu::before, .scrollmenu::after {
   display: inline-block;
   position: fixed;
+  content: "";
   top: 177px;
   right: 0;
   width: 24px;
@@ -165,7 +166,7 @@ main {
   background: linear-gradient(to right, transparent, #F8F8F8) repeat-y;
 }
 
-.scrollmenu__item--fade {
+.scrollmenu::before {
   left: 0;
   background: linear-gradient(to left, transparent, #F8F8F8) repeat-y;
 }
