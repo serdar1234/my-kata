@@ -180,7 +180,8 @@ main {
   letter-spacing: 0.2px;
 }
 
-.first-block__button {
+.first-block__button, 
+.brands__button {
   background-color: #F8F8F8;
   border: none;
   display: flex;
@@ -190,7 +191,8 @@ main {
   align-items: flex-end
 }
 
-.first-block__arrow-icon {
+.first-block__arrow-icon,
+.brands__arrow-icon {
   align-self: center;
   padding-inline: 7px;
   width: 8px;
@@ -207,7 +209,8 @@ main {
 .first-block__read-more,
 .sidebar__links a,
 .sidebar__button,
-.brands__heading {
+.brands__heading, 
+.brands__show-text {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.2px;
@@ -254,7 +257,7 @@ main {
   overflow: hidden;
 }
 
-.brands__item:nth-child(n+12) {
+.brands__item:nth-child(n+9) {
   display: none;
 }
 
@@ -267,4 +270,15 @@ main {
 
 .brands__img {
   margin: auto 0;
+}
+
+.brands__button {
+  padding-left: 2.85vw;
+  margin: 24px 3px;
+  width: auto;
+}
+
+.brands__show-text {
+  margin-left: 10px;
+  font-weight: 500;
 }
