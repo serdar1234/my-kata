@@ -210,7 +210,7 @@ main {
 .sidebar__links a,
 .sidebar__button,
 .brands__heading, 
-.brands__show-text {
+.brands__button-text {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.2px;
@@ -258,7 +258,16 @@ main {
 }
 
 .brands__item:nth-child(n+9) {
-  display: none;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, height 200ms linear;
+}
+
+.brands__list.brands__list--show-brands > .brands__item:nth-child(n+9) {
+  opacity: 1;
+  height: 70px;
+  transition: opacity 200ms linear, height 200ms linear;
 }
 
 .brands__link {
@@ -278,7 +287,11 @@ main {
   width: auto;
 }
 
-.brands__show-text {
+.brands__button-text {
   margin-left: 10px;
   font-weight: 500;
+}
+
+.brands__arrow-icon.brands__arrow-icon--turned {
+  transform: scale(-1);
 }
