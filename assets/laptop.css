@@ -100,3 +100,14 @@
 .first-block__image {
   border-radius: 6px;
 }
+
+@media screen and (min-width:1122px)  {
+  .brands__list {
+    padding-left: 2.85%;
+  }
+  
+  .brands__item {
+    margin-right: 2.85%;
+    min-width: 21.4%;
+  }
+}

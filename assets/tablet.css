@@ -86,3 +86,25 @@
   border-radius: 6px;
   aspect-ratio: 5/3;
 }
+
+/* Brands */
+
+.brands__heading {
+  padding: 16px 24px;
+}
+
+.brands__list {
+  padding-left: 24px;
+}
+
+.brands__item {
+  display: block;
+  min-width: 222px;
+  width: 29%;
+  max-width: none;
+  margin-right: 24px;
+}
+
+.brands__item:nth-child(n+7) {
+  display: none;
+}
