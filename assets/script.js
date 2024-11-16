@@ -25,22 +25,16 @@ brands__button.addEventListener("click", () => {
 
 const swiper = new Swiper(".swiper", {
   // Optional parameters
-  direction: "horizontal",
+  slidesPerView: "auto",
   loop: true,
+  spaceBetween: 16,
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
 
   // If we need pagination
   pagination: {
     el: ".swiper-pagination",
-  },
-
-  // Navigation arrows
-  // navigation: {
-  //   nextEl: ".swiper-button-next",
-  //   prevEl: ".swiper-button-prev",
-  // },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: ".swiper-scrollbar",
   },
 });
