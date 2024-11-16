@@ -22,19 +22,34 @@ brands__button.addEventListener("click", () => {
 
 
 // **************** Swiper *************
+const mediaQuery = window.matchMedia('(max-width:767.98px)');
 
-const swiper = new Swiper(".swiper", {
-  // Optional parameters
-  slidesPerView: "auto",
-  loop: true,
-  spaceBetween: 16,
-  keyboard: {
-    enabled: true,
-    onlyInViewport: false,
-  },
+function checkMedia(mediaQuery) {
+  if (mediaQuery.matches) {
+    const swiper = new Swiper(".swiper", {
+      // Optional parameters
+      slidesPerView: "auto",
+      loop: true,
+      spaceBetween: 16,
+      keyboard: {
+        enabled: true,
+        onlyInViewport: false,
+      },
+    
+      // If we need pagination
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  }
+}
 
-  // If we need pagination
-  pagination: {
-    el: ".swiper-pagination",
-  },
-});
+checkMedia(mediaQuery);
+
+// Attach listener function on state changes
+mediaQuery.addEventListener("change", function() {
+  checkMedia(mediaQuery);
+ });
+
+
+

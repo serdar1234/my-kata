@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" media="screen and (max-width:767.98px)"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="assets/styles.css" />
   <link rel="stylesheet" media="screen and (max-width:767.98px)" href="assets/mobile.css" />
   <link rel="stylesheet" media="screen and (min-width:768px) and (max-width:991.98px)" href="assets/tablet.css" />
@@ -16,7 +17,72 @@
 
 <body>
   <main>
-    <section class="brands brands-swiper-section test">
+    <section class="brands">
+      <h2 class="brands__heading">Ремонт техники различных брендов</h2>
+      <ul class="brands__list">
+        <li class="brands__item">
+          <a class="brands__link" href="#">
+            <img class="brands__img" src="img/lenovo.png" alt="Lenovo">
+          </a>
+        </li>
+        <li class="brands__item">
+          <a class="brands__link" href="#1">
+            <img class="brands__img" src="img/samsung.png" alt="Samsung">
+          </a>
+        </li>
+        <li class="brands__item">
+          <a class="brands__link" href="#2">
+            <img class="brands__img" src="img/apple.png" alt="Apple">
+          </a>
+        </li>
+        <li class="brands__item">
+          <a class="brands__link" href="#3">
+            <img class="brands__img" src="img/viewsonic.png" alt="ViewSonic">
+          </a>
+        </li>
+        <li class="brands__item">
+          <a class="brands__link" href="#">
+            <img class="brands__img" src="img/bosch.png" alt="Bosch">
+          </a>
+        </li>
+        <li class="brands__item">
+          <a class="brands__link" href="#1">
+            <img class="brands__img" src="img/hp.png" alt="HP">
+          </a>
+        </li>
+        <li class="brands__item">
+          <a class="brands__link" href="#2">
+            <img class="brands__img" src="img/acer.png" alt="Acer">
+          </a>
+        </li>
+        <li class="brands__item">
+          <a class="brands__link" href="#3">
+            <img class="brands__img" src="img/sony.png" alt="Sony">
+          </a>
+        </li>
+        <li class="brands__item">
+          <a class="brands__link" href="#1">
+            <img class="brands__img" src="img/lenovo.png" alt="Lenovo">
+          </a>
+        </li>
+        <li class="brands__item">
+          <a class="brands__link" href="#2">
+            <img class="brands__img" src="img/samsung.png" alt="Samsung">
+          </a>
+        </li>
+        <li class="brands__item">
+          <a class="brands__link" href="#3">
+            <img class="brands__img" src="img/apple.png" alt="Apple">
+          </a>
+        </li>
+      </ul>
+      <button class="brands__button">
+        <span class="brands__arrow-icon">
+        </span>
+        <p class="brands__button-text">Показать все</p>
+      </button>
+    </section>
+    <section class="brands-swiper-section test">
       <h2 class="brands__heading">Ремонт техники различных брендов</h2>
       <div class="swiper test">
         <ul class="brands__list swiper-wrapper test">
@@ -101,14 +167,10 @@
         <!-- Pagination -->
         <div class="swiper-pagination test"></div>
       </div>
-      <button class="brands__button">
-        <span class="brands__arrow-icon">
-        </span>
-        <p class="brands__button-text">Показать все</p>
-      </button>
     </section>
   </main>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script media="screen and (max-width:767.98px)"
+    src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="assets/script.js"></script>
 </body>
 

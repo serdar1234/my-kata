@@ -159,7 +159,7 @@ main {
 .scrollmenu::before,
 .scrollmenu::after {
   display: inline-block;
-  position: fixed;
+  position: sticky;
   content: "";
   top: 177px;
   right: 0;
@@ -264,7 +264,7 @@ main {
   transition: opacity 200ms linear, height 200ms linear;
 }
 
-.brands__list.brands__list--show-brands > .brands__item:nth-child(n+9) {
+.brands__list.brands__list--show-brands .brands__item:nth-child(n+9) {
   opacity: 1;
   height: 70px;
   transition: opacity 200ms linear, height 200ms linear;
@@ -296,6 +296,8 @@ main {
   transform: scale(-1);
 }
 
+.brands-swiper-section, 
 .swiper-pagination {
   display: none;
 }
+

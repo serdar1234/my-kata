@@ -37,7 +37,6 @@
   overflow: auto;
   white-space: nowrap;
   margin-top: 32px;
-  padding-left: 24px;
   scrollbar-width: none;  /* Firefox fix*/
 }
 
@@ -112,7 +111,7 @@
   transition: opacity 200ms linear, height 200ms linear;
 }
 
-.brands__list.brands__list--show-brands > .brands__item:nth-child(n+7) {
+.brands__list.brands__list--show-brands .brands__item:nth-child(n+7) {
   opacity: 1;
   height: 70px;
   transition: opacity 200ms linear, height 200ms linear;
