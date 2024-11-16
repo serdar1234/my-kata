@@ -31,14 +31,16 @@ function checkMedia(mediaQuery) {
       slidesPerView: "auto",
       loop: true,
       spaceBetween: 16,
+      // For accessibility
       keyboard: {
         enabled: true,
         onlyInViewport: false,
       },
-    
-      // If we need pagination
       pagination: {
         el: ".swiper-pagination",
+        dynamicBullets: true,
+        dynamicMainBullets: 8,
+        clickable: true,
       },
     });
   }
@@ -46,7 +48,7 @@ function checkMedia(mediaQuery) {
 
 checkMedia(mediaQuery);
 
-// Attach listener function on state changes
+// Listener function for media state changes
 mediaQuery.addEventListener("change", function() {
   checkMedia(mediaQuery);
  });

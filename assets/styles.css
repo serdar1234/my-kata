@@ -296,8 +296,7 @@ main {
   transform: scale(-1);
 }
 
-.brands-swiper-section, 
-.swiper-pagination {
+.brands-swiper-section {
   display: none;
 }
 

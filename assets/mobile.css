@@ -92,16 +92,11 @@
   height: 72px;
   margin: 16px;
 }
-
-.brands__button {
+.brands {
   display: none;
 }
 
 /* swiper */
-
-.brands {
-  display: none;
-}
 
 .brands-swiper-section {
   display: block;

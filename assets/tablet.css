@@ -116,3 +116,11 @@
   height: 70px;
   transition: opacity 200ms linear, height 200ms linear;
 }
+
+.brands__list.brands__list--show-brands .brands__item:last-child {
+  margin-bottom: 24px;
+}
+
+.brands__button {
+  margin-top: 0;
+}
