@@ -7,7 +7,7 @@ const brands__button = document.querySelector(".brands__button");
 const brand__text = brands__button.querySelector(".brands__button-text");
 const brands__arrowIcon = brands__button.querySelector(".brands__arrow-icon");
 
-brands__button.addEventListener("click", () => {
+function toggleBrands() {
   // If all brand items are displayed == true
   let allItemsDisplayed =
     brand__text.textContent === "Показать все" ? true : false;
@@ -18,7 +18,9 @@ brands__button.addEventListener("click", () => {
   
   brands__list.classList.toggle("brands__list--show-brands");
   brands__arrowIcon.classList.toggle("brands__arrow-icon--turned");
-});
+}
+
+brands__button.addEventListener("click", toggleBrands);
 
 
 // **************** Swiper *************
@@ -52,6 +54,3 @@ checkMedia(mediaQuery);
 mediaQuery.addEventListener("change", function() {
   checkMedia(mediaQuery);
  });
-
-
-
