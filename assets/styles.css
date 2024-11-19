@@ -263,7 +263,6 @@ main {
   height: 0;
   overflow: hidden;
   transition: opacity 200ms linear, height 200ms linear;
-  /* flex-grow: 0; */
 }
 
 .brands__list.brands__list--show-brands .brands__item:nth-child(n+9) {

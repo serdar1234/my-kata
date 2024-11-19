@@ -127,11 +127,6 @@
   background: linear-gradient(to left, transparent, #F8F8F8) repeat-y;
 }
 
-.tesst {
-  background-color: rgba(0, 255, 0, 0.3);
-  border: 1px dashed seagreen;
-}
-
 .swiper-slide {
   width: 240px;
 }
