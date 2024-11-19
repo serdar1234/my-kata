@@ -11,20 +11,27 @@ function toggleBrands() {
   // If all brand items are displayed == true
   let allItemsDisplayed =
     brand__text.textContent === "Показать все" ? true : false;
-  // Change the text  
+  // Change the text
   allItemsDisplayed
     ? (brand__text.textContent = "Скрыть")
     : (brand__text.textContent = "Показать все");
-  
+
   brands__list.classList.toggle("brands__list--show-brands");
   brands__arrowIcon.classList.toggle("brands__arrow-icon--turned");
+
+  if (allItemsDisplayed) {
+    const firstItemWidth = allListItems[0].offsetWidth;
+    for (let i = 6; i < allListItems.length; i++) {
+      console.log(i);
+      allListItems[i].style.maxWidth = firstItemWidth + "px";
+    }
+  }
 }
 
 brands__button.addEventListener("click", toggleBrands);
 
-
 // **************** Swiper *************
-const mediaQuery = window.matchMedia('(max-width:767.98px)');
+const mediaQuery = window.matchMedia("(max-width:767.98px)");
 
 function checkMedia(mediaQuery) {
   if (mediaQuery.matches) {
@@ -51,6 +58,6 @@ function checkMedia(mediaQuery) {
 checkMedia(mediaQuery);
 
 // Listener function for media state changes
-mediaQuery.addEventListener("change", function() {
+mediaQuery.addEventListener("change", function () {
   checkMedia(mediaQuery);
- });
+});
