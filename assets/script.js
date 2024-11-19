@@ -31,11 +31,13 @@ function toggleBrands() {
 brands__button.addEventListener("click", toggleBrands);
 
 // **************** Swiper *************
-const mediaQuery = window.matchMedia("(max-width:767.98px)");
+// Boolean - true if < 768px
+const mediaQuery = window.matchMedia("(max-width:767.98px)").matches;
+let swiper = null;
 
-function checkMedia(mediaQuery) {
-  if (mediaQuery.matches) {
-    const swiper = new Swiper(".swiper", {
+function initializeSwiper() {
+  if (mediaQuery) {
+    swiper = new Swiper(".swiper", {
       // Optional parameters
       slidesPerView: "auto",
       loop: true,
@@ -55,9 +57,14 @@ function checkMedia(mediaQuery) {
   }
 }
 
-checkMedia(mediaQuery);
+initializeSwiper();
 
-// Listener function for media state changes
-mediaQuery.addEventListener("change", function () {
-  checkMedia(mediaQuery);
+window.addEventListener('resize', function() {
+  if (window.innerWidth >= 768) {
+    // delete swiper
+    swiper.destroy();
+  } else {
+    // initialize swiper again
+    initializeSwiper();
+  }
 });
