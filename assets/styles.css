@@ -255,6 +255,7 @@ main {
   border: 1px solid #EAEAEA;
   border-radius: 6px;
   overflow: hidden;
+  flex-grow: 1;
 }
 
 .brands__item:nth-child(n+9) {
@@ -262,6 +263,7 @@ main {
   height: 0;
   overflow: hidden;
   transition: opacity 200ms linear, height 200ms linear;
+  flex-grow: 0;
 }
 
 .brands__list.brands__list--show-brands .brands__item:nth-child(n+9) {
@@ -279,6 +281,7 @@ main {
 
 .brands__img {
   margin: auto 0;
+  max-width: 128px;
 }
 
 .brands__button {
