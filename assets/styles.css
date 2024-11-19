@@ -253,8 +253,7 @@ main {
   min-width: 206px;
   max-width: 238px;
   height: 70px;
-  /* border: 1px solid #eaeaea; */
-  border: 1px solid red;
+  border: 1px solid #eaeaea;
   border-radius: 6px;
   overflow: hidden;
   flex-grow: 1;
