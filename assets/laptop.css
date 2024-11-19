@@ -106,4 +106,5 @@
 .swiper-slide {
   display: flex;
   flex-grow: 1;
+  max-width: 272px;
 }

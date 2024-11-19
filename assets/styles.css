@@ -259,6 +259,11 @@ main {
   flex-grow: 1;
 }
 
+.swiper-slide {
+  display: flex;
+  flex-grow: 1;
+}
+
 .swiper-slide:nth-child(n + 9) {
   opacity: 0;
   height: 0;
@@ -302,7 +307,3 @@ main {
 .first-block__arrow-icon.first-block__arrow--turned {
   transform: scale(-1);
 }
-
-/* .brands-swiper-section {
-  display: none;
-} */

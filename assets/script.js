@@ -16,7 +16,6 @@ function widthEqualizer() {
   }
   const firstItemWidth = allListItems[0].offsetWidth;
   for (let i = 3; i < allListItems.length; i++) {
-    // console.log(i);
     allListItems[i].style.maxWidth = firstItemWidth + "px";
   }
 }
@@ -32,7 +31,6 @@ function toggleBrands() {
 
   brands__list.classList.toggle("brands__list--show-brands");
   brands__arrowIcon.classList.toggle("brands__arrow-icon--turned");
-
   widthEqualizer();
 }
 
