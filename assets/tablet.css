@@ -99,8 +99,6 @@
 .brands__item {
   display: block;
   min-width: 222px;
-  width: 29%;
-  max-width: none;
   margin-right: 24px;
 }
 
@@ -119,6 +117,7 @@
 .brands__list.brands__list--show-brands .swiper-slide:nth-child(n+7) {
   opacity: 1;
   height: 70px;
+  flex-grow: 0;
   padding-bottom: 2px;
   transition: opacity 200ms linear, height 200ms linear;
 }

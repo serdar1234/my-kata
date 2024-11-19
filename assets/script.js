@@ -7,6 +7,20 @@ const brands__button = document.querySelector(".brands__button");
 const brand__text = brands__button.querySelector(".brands__button-text");
 const brands__arrowIcon = brands__button.querySelector(".brands__arrow-icon");
 
+function widthEqualizer() {
+  let shownItemCount = 0;
+  if (window.matchMedia("(max-width:991.98px)").matches) {
+    shownItemCount = 6;
+  } else if (window.matchMedia("(min-width:992px)").matches) {
+    shownItemCount = 8;
+  }
+  const firstItemWidth = allListItems[0].offsetWidth;
+  for (let i = 3; i < allListItems.length; i++) {
+    // console.log(i);
+    allListItems[i].style.maxWidth = firstItemWidth + "px";
+  }
+}
+
 function toggleBrands() {
   // If all brand items are displayed == true
   let allItemsDisplayed =
@@ -19,20 +33,13 @@ function toggleBrands() {
   brands__list.classList.toggle("brands__list--show-brands");
   brands__arrowIcon.classList.toggle("brands__arrow-icon--turned");
 
-  function widthEqualizer() {
-    const firstItemWidth = allListItems[0].offsetWidth;
-    let shownItemCount = 0;
-    if (allItemsDisplayed && window.matchMedia("(max-width:991.98px)").matches) {
-      shownItemCount = 6;
-    } else if ((allItemsDisplayed && window.matchMedia("(min-width:992px)").matches)){
-      shownItemCount = 8;
-    }
-    for (let i = shownItemCount; i < allListItems.length; i++) {
-      allListItems[i].style.maxWidth = firstItemWidth + "px";
-    }
-  }
   widthEqualizer();
 }
+
+window.addEventListener("resize", () => {
+  widthEqualizer();
+});
+
 
 brands__button.addEventListener("click", toggleBrands);
 
