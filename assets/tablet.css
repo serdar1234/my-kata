@@ -102,11 +102,6 @@
   margin-right: 24px;
 }
 
-.swiper-slide {
-  display: flex;
-  flex-grow: 1;
-}
-
 .swiper-slide:nth-child(n+7) {
   opacity: 0;
   height: 0;
