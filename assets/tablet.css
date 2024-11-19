@@ -104,20 +104,26 @@
   margin-right: 24px;
 }
 
-.brands__item:nth-child(n+7) {
+.swiper-slide {
+  display: flex;
+  flex-grow: 1;
+}
+
+.swiper-slide:nth-child(n+7) {
   opacity: 0;
   height: 0;
   overflow: hidden;
   transition: opacity 200ms linear, height 200ms linear;
 }
 
-.brands__list.brands__list--show-brands .brands__item:nth-child(n+7) {
+.brands__list.brands__list--show-brands .swiper-slide:nth-child(n+7) {
   opacity: 1;
   height: 70px;
+  padding-bottom: 2px;
   transition: opacity 200ms linear, height 200ms linear;
 }
 
-.brands__list.brands__list--show-brands .brands__item:last-child {
+.brands__list.brands__list--show-brands .swiper-slide:last-child {
   margin-bottom: 24px;
 }
 

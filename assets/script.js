@@ -1,6 +1,6 @@
 // Brand icons
 const brands__list = document.querySelector(".brands__list");
-const allListItems = brands__list.querySelectorAll(".brands__item");
+const allListItems = brands__list.querySelectorAll(".swiper-slide");
 
 // Toggle button and its elements
 const brands__button = document.querySelector(".brands__button");
@@ -19,23 +19,29 @@ function toggleBrands() {
   brands__list.classList.toggle("brands__list--show-brands");
   brands__arrowIcon.classList.toggle("brands__arrow-icon--turned");
 
-  if (allItemsDisplayed) {
+  function widthEqualizer() {
     const firstItemWidth = allListItems[0].offsetWidth;
-    for (let i = 6; i < allListItems.length; i++) {
-      console.log(i);
+    let shownItemCount = 0;
+    if (allItemsDisplayed && window.matchMedia("(max-width:991.98px)").matches) {
+      shownItemCount = 6;
+    } else if ((allItemsDisplayed && window.matchMedia("(min-width:992px)").matches)){
+      shownItemCount = 8;
+    }
+    for (let i = shownItemCount; i < allListItems.length; i++) {
       allListItems[i].style.maxWidth = firstItemWidth + "px";
     }
   }
+  widthEqualizer();
 }
 
 brands__button.addEventListener("click", toggleBrands);
 
 // **************** Swiper *************
-// Boolean - true if < 768px
-const mediaQuery = window.matchMedia("(max-width:767.98px)").matches;
 let swiper = null;
 
 function initializeSwiper() {
+  const mediaQuery = window.matchMedia("(max-width:767.98px)").matches;
+
   if (mediaQuery) {
     swiper = new Swiper(".swiper", {
       // Optional parameters
@@ -59,8 +65,8 @@ function initializeSwiper() {
 
 initializeSwiper();
 
-window.addEventListener('resize', function() {
-  if (window.innerWidth >= 768) {
+window.addEventListener("resize", function () {
+  if (window.innerWidth >= 768 && swiper !== null) {
     // delete swiper
     swiper.destroy();
   } else {

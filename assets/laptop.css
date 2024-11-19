@@ -100,3 +100,10 @@
 .first-block__image {
   border-radius: 6px;
 }
+
+/* Swiper */
+
+.swiper-slide {
+  display: flex;
+  flex-grow: 1;
+}

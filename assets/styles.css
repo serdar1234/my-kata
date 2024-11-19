@@ -1,13 +1,13 @@
 @font-face {
-  font-family: 'TTLakes';
-  src: url('../fonts/TTLakes-Regular.woff') format('woff');
+  font-family: "TTLakes";
+  src: url("../fonts/TTLakes-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'TTLakes';
-  src: url('../fonts/TTLakes-Bold.woff') format('woff');
+  font-family: "TTLakes";
+  src: url("../fonts/TTLakes-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
 }
@@ -15,12 +15,12 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'TTLakes', Arial, Helvetica, sans-serif;
+  font-family: "TTLakes", Arial, Helvetica, sans-serif;
 }
 
 html,
 body {
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
   height: 100%;
 }
 
@@ -46,7 +46,7 @@ main {
 .nav__list {
   display: flex;
   align-items: center;
-  list-style-type: none
+  list-style-type: none;
 }
 
 .nav__link {
@@ -74,35 +74,35 @@ main {
 
 /* Icons */
 .nav__icon.nav__icon--burger {
-  background-image: url('../img/burger.svg');
+  background-image: url("../img/burger.svg");
 }
 
 .nav__icon.nav__icon--call {
-  background-image: url('../img/call.svg');
+  background-image: url("../img/call.svg");
 }
 
 .nav__icon.nav__icon--chat {
-  background-image: url('../img/chat.svg');
+  background-image: url("../img/chat.svg");
 }
 
 .nav__icon.nav__icon--checkstatus {
-  background-image: url('../img/checkstatus.svg');
+  background-image: url("../img/checkstatus.svg");
 }
 
 .nav__icon.nav__icon--profile {
-  background-image: url('../img/profile.svg');
+  background-image: url("../img/profile.svg");
 }
 
 .nav__icon.nav__icon--repair {
-  background-image: url('../img/repair.svg');
+  background-image: url("../img/repair.svg");
 }
 
 .nav__icon.nav__icon--search {
-  background-image: url('../img/search.svg');
+  background-image: url("../img/search.svg");
 }
 
 .nav__icon.nav__icon--x-burger {
-  background-image: url('../img/x-burger.svg');
+  background-image: url("../img/x-burger.svg");
 }
 
 /* Heading */
@@ -122,7 +122,7 @@ main {
   content: "";
   height: 40px;
   width: 4px;
-  background-color: #41F6D7;
+  background-color: #41f6d7;
   position: absolute;
   left: 0;
   border-top-left-radius: 4px;
@@ -141,7 +141,7 @@ main {
 }
 
 .scrollmenu__item {
-  color: #7E7E82;
+  color: #7e7e82;
   display: inline-block;
   font-size: 16px;
   text-align: center;
@@ -151,8 +151,8 @@ main {
 }
 
 .scrollmenu__item.active {
-  background-color: #FFF;
-  border: 2px solid #B8FFEC;
+  background-color: #fff;
+  border: 2px solid #b8ffec;
   border-radius: 5px;
 }
 
@@ -165,12 +165,12 @@ main {
   right: 0;
   width: 24px;
   height: 40px;
-  background: linear-gradient(to right, transparent, #F8F8F8) repeat-y;
+  background: linear-gradient(to right, transparent, #f8f8f8) repeat-y;
 }
 
 .scrollmenu::before {
   left: 0;
-  background: linear-gradient(to left, transparent, #F8F8F8) repeat-y;
+  background: linear-gradient(to left, transparent, #f8f8f8) repeat-y;
 }
 
 /* First block */
@@ -180,9 +180,9 @@ main {
   letter-spacing: 0.2px;
 }
 
-.first-block__button, 
+.first-block__button,
 .brands__button {
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
   border: none;
   display: flex;
   width: 132px;
@@ -205,12 +205,12 @@ main {
 .first-block__read-more,
 .sidebar__links a,
 .sidebar__button,
-.brands__heading, 
+.brands__heading,
 .brands__button-text {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.2px;
-  color: #1B1C21;
+  color: #1b1c21;
 }
 
 .first-block__read-more {
@@ -226,13 +226,13 @@ main {
 /* Brands */
 
 .brands__heading {
-  color: #7E7E82;
+  color: #7e7e82;
   text-transform: uppercase;
   font-weight: normal;
   padding: 16px 32px;
   margin-bottom: 24px;
-  box-shadow: inset 0px 1px 0px #D9FFF5;
-  background-image: linear-gradient(to right, #F8F8F8, #FFF);
+  box-shadow: inset 0px 1px 0px #d9fff5;
+  background-image: linear-gradient(to right, #f8f8f8, #fff);
 }
 
 .brands__list {
@@ -245,29 +245,33 @@ main {
 
 .brands__item {
   margin-right: 32px;
-  background: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='1' y='1' width='38' height='38' rx='19' stroke='%23FF3E79' stroke-width='2'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M21.5 20L17.7071 16.2071C17.3166 15.8166 17.3166 15.1834 17.7071 14.7929L17.7929 14.7071C18.1834 14.3166 18.8166 14.3166 19.2071 14.7071L23.7929 19.2929C24.1834 19.6834 24.1834 20.3166 23.7929 20.7071L19.2071 25.2929C18.8166 25.6834 18.1834 25.6834 17.7929 25.2929L17.7071 25.2071C17.3166 24.8166 17.3166 24.1834 17.7071 23.7929L21.5 20Z' fill='%23FF3E79'/%3E%3C/svg%3E%0A") no-repeat;
+  background: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='1' y='1' width='38' height='38' rx='19' stroke='%23FF3E79' stroke-width='2'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M21.5 20L17.7071 16.2071C17.3166 15.8166 17.3166 15.1834 17.7071 14.7929L17.7929 14.7071C18.1834 14.3166 18.8166 14.3166 19.2071 14.7071L23.7929 19.2929C24.1834 19.6834 24.1834 20.3166 23.7929 20.7071L19.2071 25.2929C18.8166 25.6834 18.1834 25.6834 17.7929 25.2929L17.7071 25.2071C17.3166 24.8166 17.3166 24.1834 17.7071 23.7929L21.5 20Z' fill='%23FF3E79'/%3E%3C/svg%3E%0A")
+    no-repeat;
   background-position: 92% 50%;
-  background-color: #FFF;
+  background-color: #fff;
   list-style: none;
   min-width: 206px;
   max-width: 238px;
   height: 70px;
-  border: 1px solid #EAEAEA;
+  /* border: 1px solid #eaeaea; */
+  border: 1px solid red;
   border-radius: 6px;
   overflow: hidden;
   flex-grow: 1;
 }
 
-.brands__item:nth-child(n+9) {
+.swiper-slide:nth-child(n + 9) {
   opacity: 0;
   height: 0;
   overflow: hidden;
   transition: opacity 200ms linear, height 200ms linear;
 }
 
-.brands__list.brands__list--show-brands .brands__item:nth-child(n+9) {
+.brands__list.brands__list--show-brands
+  .swiper-slide:nth-child(n + 9) {
   opacity: 1;
   height: 70px;
+  padding-bottom: 2px;
   transition: opacity 200ms linear, height 200ms linear;
 }
 
@@ -300,7 +304,6 @@ main {
   transform: scale(-1);
 }
 
-.brands-swiper-section {
+/* .brands-swiper-section {
   display: none;
-}
-
+} */
