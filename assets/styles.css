@@ -250,18 +250,16 @@ main {
   background-position: 92% 50%;
   background-color: #fff;
   list-style: none;
-  min-width: 206px;
-  max-width: 238px;
+  width: 100%;
   height: 70px;
   border: 1px solid #eaeaea;
   border-radius: 6px;
   overflow: hidden;
-  flex-grow: 1;
 }
 
 .swiper-slide {
   display: flex;
-  flex-grow: 1;
+  width: calc(100% / 4);
 }
 
 .brands__link {

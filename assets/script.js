@@ -74,8 +74,13 @@ window.addEventListener("resize", function () {
   if (window.innerWidth >= 768 && swiper !== null) {
     // delete swiper
     swiper.destroy();
+    allListItems.forEach(item => {
+      item.style.setProperty('margin-right', '0');
+  });
+    console.log('swiper destroyed +');
   } else {
     // initialize swiper again
     initializeSwiper();
+    console.log('swiper init');
   }
 });

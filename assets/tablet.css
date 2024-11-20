@@ -98,8 +98,12 @@
 
 .brands__item {
   display: block;
-  min-width: 222px;
   margin-right: 24px;
+}
+
+.swiper-slide {
+  width: calc(100% / 3);
+  margin-right: 0 !important;
 }
 
 .swiper-slide:nth-child(n+7) {

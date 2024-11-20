@@ -103,6 +103,10 @@
 
 /* Swiper */
 
+.swiper-slide {
+  margin-right: 0 !important;
+}
+
 .swiper-slide:nth-child(n + 9) {
   opacity: 0;
   height: 0;
@@ -116,8 +120,4 @@
   height: 70px;
   padding-bottom: 2px;
   transition: opacity 200ms linear, height 200ms linear;
-}
-
-.swiper-slide {
-  max-width: 272px;
 }
