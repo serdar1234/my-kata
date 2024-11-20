@@ -7,19 +7,6 @@ const brands__button = document.querySelector(".brands__button");
 const brand__text = brands__button.querySelector(".brands__button-text");
 const brands__arrowIcon = brands__button.querySelector(".brands__arrow-icon");
 
-function widthEqualizer() {
-  let shownItemCount = 0;
-  if (window.matchMedia("(max-width:991.98px)").matches) {
-    shownItemCount = 6;
-  } else if (window.matchMedia("(min-width:992px)").matches) {
-    shownItemCount = 8;
-  }
-  const firstItemWidth = allListItems[0].offsetWidth;
-  for (let i = 3; i < allListItems.length; i++) {
-    allListItems[i].style.maxWidth = firstItemWidth + "px";
-  }
-}
-
 function toggleBrands() {
   // If all brand items are displayed == true
   let allItemsDisplayed =
@@ -31,13 +18,7 @@ function toggleBrands() {
 
   brands__list.classList.toggle("brands__list--show-brands");
   brands__arrowIcon.classList.toggle("brands__arrow-icon--turned");
-  widthEqualizer();
 }
-
-window.addEventListener("resize", () => {
-  widthEqualizer();
-});
-
 
 brands__button.addEventListener("click", toggleBrands);
 
@@ -74,13 +55,8 @@ window.addEventListener("resize", function () {
   if (window.innerWidth >= 768 && swiper !== null) {
     // delete swiper
     swiper.destroy();
-    allListItems.forEach(item => {
-      item.style.setProperty('margin-right', '0');
-  });
-    console.log('swiper destroyed +');
   } else {
     // initialize swiper again
     initializeSwiper();
-    console.log('swiper init');
   }
 });
