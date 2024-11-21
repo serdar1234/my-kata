@@ -39,17 +39,24 @@ function initializeSwiper() {
         enabled: true,
         onlyInViewport: false,
       },
+      // Correcting pagination
+      hashNavigation: {
+        watchState: true,
+      },
       pagination: {
         el: ".swiper-pagination",
-        dynamicBullets: true,
-        dynamicMainBullets: 8,
-        clickable: true,
       },
     });
   }
 }
 
 initializeSwiper();
+
+// Adding data-hash attr to correct pagination
+allListItems.forEach((slide, index) => {
+  slide.setAttribute('data-hash', `slide${index + 1}`);
+});
+
 
 window.addEventListener("resize", function () {
   if (window.innerWidth >= 768 && swiper !== null) {
