@@ -67,11 +67,11 @@
 }
 
 .scrollmenu__item {
-  margin-bottom: 8px;
+  margin-bottom: 0;
 }
 
-.scrollmenu__item:last-child {
-  margin-bottom: 0;
+.scrollmenu__item:first-child {
+  margin-bottom: 8px;
 }
 
 /* First block */
