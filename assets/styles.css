@@ -238,7 +238,6 @@ main {
 .brands__list {
   display: flex;
   justify-content: flex-start;
-  flex-wrap: wrap;
   row-gap: 15px;
   padding-left: 32px;
 }
@@ -251,7 +250,7 @@ main {
   background-color: #fff;
   list-style: none;
   width: 100%;
-  height: 70px;
+
   border: 1px solid #eaeaea;
   border-radius: 6px;
   overflow: hidden;
@@ -259,7 +258,6 @@ main {
 
 .swiper-slide {
   display: flex;
-  width: calc(100% / 4);
 }
 
 .brands__link {

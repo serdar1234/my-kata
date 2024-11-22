@@ -19,17 +19,11 @@
   padding-top: 5px;
 }
 
-.nav__left .nav__list .nav__item:nth-child(2) {
-  display: none;
-}
-
+.nav__text,
+.nav__left .nav__list .nav__item:nth-child(2), 
 .nav__right .nav__list .nav__item:nth-child(1),
 .nav__right .nav__list .nav__item:nth-child(2),
 .nav__right .nav__list .nav__item:nth-child(3) {
-  display: none;
-}
-
-.nav__text {
   display: none;
 }
 
@@ -100,7 +94,6 @@
 
 .brands-swiper-section {
   display: block;
-  max-width: 768px;
   margin-inline: auto;
 }
 
