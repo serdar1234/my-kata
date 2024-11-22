@@ -131,16 +131,16 @@ main {
 }
 
 /* Scroll Menu */
-.scrollmenu {
+.scroll-menu {
   position: relative;
 }
 
-.scrollmenu::-webkit-scrollbar {
+.scroll-menu::-webkit-scrollbar {
   width: 0px;
   /* Chrome fix */
 }
 
-.scrollmenu__item {
+.scroll-menu__item {
   color: #7e7e82;
   display: inline-block;
   font-size: 16px;
@@ -150,14 +150,14 @@ main {
   text-decoration: none;
 }
 
-.scrollmenu__item.active {
+.scroll-menu__item.active {
   background-color: #fff;
   border: 2px solid #b8ffec;
   border-radius: 5px;
 }
 
-.scrollmenu::before,
-.scrollmenu::after {
+.scroll-menu::before,
+.scroll-menu::after {
   display: inline-block;
   position: sticky;
   content: "";
@@ -168,7 +168,7 @@ main {
   background: linear-gradient(to right, transparent, #f8f8f8) repeat-y;
 }
 
-.scrollmenu::before {
+.scroll-menu::before {
   left: 0;
   background: linear-gradient(to left, transparent, #f8f8f8) repeat-y;
 }

@@ -40,7 +40,7 @@
 }
 
 /* Scroll Menu */
-.scrollmenu {
+.scroll-menu {
   overflow: auto;
   white-space: nowrap;
   margin-top: 32px;

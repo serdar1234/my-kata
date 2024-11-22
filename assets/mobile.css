@@ -37,7 +37,7 @@
 }
 
 /* Scroll Menu */
-.scrollmenu {
+.scroll-menu {
   overflow: auto;
   white-space: nowrap;
   margin-top: 24px;
@@ -45,7 +45,7 @@
   /* Firefox fix*/
 }
 
-.scrollmenu__item {
+.scroll-menu__item {
   padding: 7px 14px;
 }
 
