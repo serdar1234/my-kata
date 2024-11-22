@@ -189,7 +189,6 @@ main {
   height: 24px;
 }
 
-.arrow-icon,
 .arrow-icon {
   align-self: center;
   padding-inline: 7px;
@@ -284,7 +283,6 @@ main {
   font-weight: 500;
 }
 
-.arrow-icon.arrow-icon--turned,
-.arrow-icon.arrow--turned {
+.arrow-icon.arrow-icon--turned {
   transform: scale(-1);
 }

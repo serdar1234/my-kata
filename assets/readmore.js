@@ -21,7 +21,7 @@ function toggleText() {
     ? (buttonText.textContent = "Скрыть")
     : (buttonText.textContent = "Читать далее");
   // test - need a text toggler here
-  buttonArrow.classList.toggle("arrow--turned");
+  buttonArrow.classList.toggle("arrow-icon--turned");
 }
 
 readButton.addEventListener("click", toggleText);
