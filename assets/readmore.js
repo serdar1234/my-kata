@@ -9,7 +9,7 @@ const text3 = firstBlock.querySelectorAll(".first-block__text3");
 // Toggle button and its elements
 const readButton = firstBlock.querySelector(".first-block__button");
 const buttonText = readButton.querySelector(".first-block__read-more");
-const buttonArrow = readButton.querySelector(".first-block__arrow-icon");
+const buttonArrow = readButton.querySelector(".arrow-icon");
 console.log(firstBlock);
 
 function toggleText() {
@@ -21,7 +21,7 @@ function toggleText() {
     ? (buttonText.textContent = "Скрыть")
     : (buttonText.textContent = "Читать далее");
   // test - need a text toggler here
-  buttonArrow.classList.toggle("first-block__arrow--turned");
+  buttonArrow.classList.toggle("arrow--turned");
 }
 
 readButton.addEventListener("click", toggleText);

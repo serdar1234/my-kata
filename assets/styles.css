@@ -189,8 +189,8 @@ main {
   height: 24px;
 }
 
-.first-block__arrow-icon,
-.brands__arrow-icon {
+.arrow-icon,
+.arrow-icon {
   align-self: center;
   padding-inline: 7px;
   width: 8px;
@@ -284,7 +284,7 @@ main {
   font-weight: 500;
 }
 
-.brands__arrow-icon.brands__arrow-icon--turned,
-.first-block__arrow-icon.first-block__arrow--turned {
+.arrow-icon.arrow-icon--turned,
+.arrow-icon.arrow--turned {
   transform: scale(-1);
 }
