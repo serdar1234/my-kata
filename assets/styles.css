@@ -196,7 +196,6 @@ body * {
   background-color: #f8f8f8;
   border: none;
   display: flex;
-  width: 132px;
   height: 24px;
 }
 
@@ -275,7 +274,6 @@ body * {
 .brands__button {
   padding-left: 2.85vw;
   margin: 24px 3px;
-  width: auto;
 }
 
 .brands__button-text {
