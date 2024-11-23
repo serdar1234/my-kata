@@ -16,6 +16,10 @@
   margin: 0;
   padding: 0;
   font-family: "TTLakes", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #1b1c21;
 }
 
 html,
@@ -24,8 +28,15 @@ body {
   height: 100%;
 }
 
-header,
-main {
+body * {
+  font-size: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  color: inherit;
+}
+
+.header,
+.main {
   position: relative;
   max-width: 1120px;
   margin: 0 auto;
@@ -199,17 +210,6 @@ main {
   background-repeat: no-repeat;
   background-position: center;
   display: inline-block;
-}
-
-.first-block__read-more,
-.sidebar__links a,
-.sidebar__button,
-.brands__heading,
-.brands__button-text {
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: -0.2px;
-  color: #1b1c21;
 }
 
 .first-block__read-more {
