@@ -191,8 +191,7 @@ body * {
   letter-spacing: 0.2px;
 }
 
-.first-block__button,
-.brands__button {
+.button {
   background-color: #f8f8f8;
   border: none;
   display: flex;
