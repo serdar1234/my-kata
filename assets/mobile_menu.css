@@ -88,11 +88,11 @@
   margin-bottom: 12px;
 }
 
-.sidebar .nav__list.sidebar__list {
+.sidebar__contacts .nav__list.sidebar__list {
   height: auto;
 }
 
-.sidebar__links.sidebar__links--mailto a {
+.sidebar__links--mailto a {
   margin-top: 6px;
   padding: 10px 24px;
 }
