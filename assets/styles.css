@@ -22,10 +22,21 @@ html,
 body {
   background-color: #f8f8f8;
   height: 100%;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #1b1c21;
 }
 
-header,
-main {
+body * {
+  font-size: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  color: inherit;
+}
+
+.header,
+.main {
   position: relative;
   max-width: 1120px;
   margin: 0 auto;
@@ -199,17 +210,6 @@ main {
   background-repeat: no-repeat;
   background-position: center;
   display: inline-block;
-}
-
-.first-block__read-more,
-.sidebar__links a,
-.sidebar__button,
-.brands__heading,
-.brands__button-text {
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: -0.2px;
-  color: #1b1c21;
 }
 
 .first-block__read-more {
