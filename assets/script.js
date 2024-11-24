@@ -41,6 +41,8 @@ function initializeSwiper() {
       },
       pagination: {
         el: ".swiper-pagination",
+        dynamicBullets: true,
+        dynamicMainBullets: 8,
       },
     });
   }
